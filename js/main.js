@@ -64,26 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(this);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const subject = formData.get('subject');
-            const message = formData.get('message');
-            
-            const mailtoLink = `mailto:dibenedettoanthony7@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
-            
-            window.location.href = mailtoLink;
-            
-            this.reset();
-            
-            alert('Thank you for your message! Your email client should open with the message prepared.');
-        });
-    }
+    // Remove contact form handling since form was removed
 
     const skillTags = document.querySelectorAll('.skill-tag');
     skillTags.forEach(tag => {
@@ -121,6 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    const elements = document.querySelectorAll('.timeline-content, .project-card, .skill-category');
     elements.forEach(element => {
         element.style.opacity = '0';
         element.style.transform = 'translateY(30px)';

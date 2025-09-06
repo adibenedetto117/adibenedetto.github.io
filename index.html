@@ -106,12 +106,26 @@
                     <div class="timeline-item">
                         <div class="timeline-content">
                             <h3>Data Scientist</h3>
-                            <h4>Argonne National Laboratory</h4>
+                            <h4>Argonne National Laboratory - Data Science and Learning Division</h4>
                             <span class="timeline-date">June 2024 - August 2024</span>
                             <ul>
                                 <li>Designed 3D U-Net to segment 1,700+ borosilicate glass tomography slices, achieving 0.934 Dice score</li>
-                                <li>Developed mask generation pipeline reducing preprocessing time by 25%</li>
-                                <li>Led HPC training on Polaris, improving speed by 35% through optimization techniques</li>
+                                <li>Developed mask generation pipeline using normalization, histogram equalization, and Otsu thresholding, reducing preprocessing time by 25%</li>
+                                <li>Worked with large, complex 3D datasets on Polaris supercomputer, optimizing training speed by 35% through chunking, pruning, and mixed precision</li>
+                                <li>Benchmarked performance against unsupervised baselines (3D K-means, 2.5D depth map gradients)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Undergraduate Researcher</h3>
+                            <h4>Lewis University</h4>
+                            <span class="timeline-date">June 2023 - August 2023</span>
+                            <ul>
+                                <li>Built interactive Streamlit web app to run Atomic Layer Deposition (ALD) prediction models, enabling real-time experimentation by materials scientists</li>
+                                <li>Integrated dynamic feature inputs, model inference, and visualization to support faster experimental feedback loops</li>
+                                <li>Collected and incorporated stakeholder feedback, leading to 30% improvement in usability and potential integration into ALD reactor system</li>
                             </ul>
                         </div>
                     </div>
@@ -119,12 +133,13 @@
                     <div class="timeline-item">
                         <div class="timeline-content">
                             <h3>Data Scientist</h3>
-                            <h4>Argonne National Laboratory</h4>
+                            <h4>Argonne National Laboratory - Applied Materials Division</h4>
                             <span class="timeline-date">January 2023 - May 2023</span>
                             <ul>
-                                <li>Developed ensemble models achieving 99.4% classification accuracy on 10,000 ALD samples</li>
-                                <li>Trained CNN for film thickness prediction with MSE 8.26e-7 and R² 0.99</li>
-                                <li>Applied feature elimination reducing inputs by 87% with minimal accuracy loss</li>
+                                <li>Applied ensemble learning (Random Forest, SVM, KNN) on 10,000+ ALD data rows to classify self-saturating vs. non-self-saturating processes, achieving 99.4% accuracy</li>
+                                <li>Trained CNN regression model for predicting film thickness standard deviation with MSE 8.26e-7 and R² 0.99</li>
+                                <li>Reduced input features by 87% with Recursive Feature Elimination (RFE), maintaining accuracy within 1% of baseline</li>
+                                <li>Tested robustness via Gaussian noise injection, preserving >99% accuracy in simulated noisy conditions</li>
                             </ul>
                         </div>
                     </div>
@@ -147,7 +162,7 @@
                             <div class="project-tech">
                                 <span class="tech-tag">PyTorch</span>
                                 <span class="tech-tag">NumPy</span>
-                                <span class="tech-tag">Computer Vision</span>
+                                <span class="tech-tag">Deep Learning</span>
                                 <span class="tech-tag">3D Segmentation</span>
                             </div>
                         </div>
@@ -229,7 +244,9 @@
                         <div class="project-content">
                             <h3>Household Income Modeling</h3>
                             <p class="project-date">September 2024</p>
-                            <p>Built CNN-based regression and classification models using Illinois housing data. Reduced MAE from $37K to $27.8K (~25% improvement) and achieved 0.77 F1-score for classification.</p>
+                            <p><strong>Challenge:</strong> Predict income from Illinois housing data</p>
+                            <p><strong>Solution:</strong> CNN-based regression and classification models</p>
+                            <p><strong>Results:</strong> 25% improvement in MAE ($37K to $27.8K), 0.77 F1-score</p>
                             <div class="project-tech">
                                 <span class="tech-tag">TensorFlow</span>
                                 <span class="tech-tag">Keras</span>
@@ -270,7 +287,7 @@
                             <span class="skill-tag">spaCy</span>
                             <span class="skill-tag">NLTK</span>
                             <span class="skill-tag">OpenCV</span>
-                            <span class="skill-tag">Computer Vision</span>
+                            <span class="skill-tag">Deep Learning</span>
                         </div>
                     </div>
                     
@@ -282,6 +299,7 @@
                             <span class="skill-tag">MinIO</span>
                             <span class="skill-tag">Pandas</span>
                             <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Large Datasets</span>
                             <span class="skill-tag">Tableau</span>
                             <span class="skill-tag">Power BI</span>
                             <span class="skill-tag">Matplotlib</span>
@@ -298,7 +316,7 @@
                             <span class="skill-tag">CI/CD</span>
                             <span class="skill-tag">AWS</span>
                             <span class="skill-tag">Heroku</span>
-                            <span class="skill-tag">HPC</span>
+                            <span class="skill-tag">Linux</span>
                         </div>
                     </div>
                 </div>
@@ -353,28 +371,6 @@
                             <a href="https://www.linkedin.com/in/anthony-dibenedetto" target="_blank" class="social-link">LinkedIn</a>
                             <a href="https://github.com/adibenedetto117" target="_blank" class="social-link">GitHub</a>
                         </div>
-                    </div>
-                    
-                    <div class="contact-form">
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
                     </div>
                 </div>
             </div>
